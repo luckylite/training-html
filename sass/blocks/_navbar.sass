@@ -1,0 +1,49 @@
+.navbar
+    &-wrap
+        height: 80px
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__mobile, &__landline
+        text-align: right
+    &__phone
+        display: block
+        font-size: 19px
+        text-decoration: none
+        color: #000
+        margin-bottom: 4px
+        +bold
+    &__small-text
+        font-size: 14px
+        color: $text-color-light
+        text-decoration: none
+.menu
+    &-button
+        cursor: pointer
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        background-color: transparent
+        border: none
+        border-right: 1px solid rgba(#510bba, 0.1)
+        border-left: 1px solid rgba(#510bba, 0.1)
+        height: 80px
+        width: 70px
+        &__line
+            display: block
+            width: 20px
+            height: 3px
+            margin: 2px 0
+            background-color: #89a9eb
+.logo
+    &__text
+        display: block
+        font-size: 18px
+        text-transform: uppercase
+        margin-bottom: 5px
+        +bold
+    &__descr
+        display: block
+        font-size: 14px
+        color: $text-color-light
