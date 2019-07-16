@@ -69,3 +69,35 @@
         display: block
         font-size: 14px
         color: $text-color-light
+
+@media (max-width: 1200px)
+    .menu
+        &__nav
+            justify-content: space-between
+
+@media (max-width: 991px)
+    .menu
+        &__nav
+            flex-direction: column
+            align-items: center
+        &__link
+            margin: 10px 0
+
+    .navbar
+        &__mobile, &__landline
+            display: none
+
+@media (max-width: 580px)
+    .navbar
+        &-wrap
+            height: 70px
+        &__mobile, &__landline
+            display: none
+    .logo
+        display: none
+
+    .menu
+        top: 70px
+        &-button
+            height: 70px
+            width: 55px
